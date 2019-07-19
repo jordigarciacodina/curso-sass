@@ -1,0 +1,56 @@
+// Banner 
+	
+.banner {
+	max-width: 100%;
+	padding: 60px 3%;
+	position: relative;
+	background-image: url('../img/banner-back.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&::before {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+		background-image: linear-gradient(
+			90deg,
+			rgba(198,83,140,.1) 5%,
+			rgba(198,83,140,.5) 30%,
+			rgba(198,83,140,1) 50%
+		);
+	}
+	.wrap {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		.box {
+			flex-basis: 50%;
+			color: #fff;
+			text-align: left;
+			z-index: 2;
+			h1 {
+				font-size: 60px;
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			p {
+				font-size: 20px;
+				line-height: 1.5;
+			}
+			.cta {
+				margin-top: 40px;
+				.button {
+					font-size: 20px;
+					color: #fff;
+					background-color: #333;
+					padding: 16px 50px;
+					border-radius: 50px;
+				}
+			}
+		}
+	}
+}

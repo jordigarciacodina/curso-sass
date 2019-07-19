@@ -1,0 +1,36 @@
+// Footer 
+
+footer {
+	width: 100%;
+	background-color: #333;
+}
+
+footer .wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:15px 3%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+footer .wrap span {
+	color: #fff;
+	font-weight: 300;
+}
+
+footer .wrap ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+footer .wrap ul li {
+	padding: 0 10px;
+}
+
+footer .wrap ul li a {
+	color: #fff;
+	font-weight: 300;
+}

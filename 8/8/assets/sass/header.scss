@@ -1,0 +1,65 @@
+// Header 
+
+@import "variables";
+@import "mixins";
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: $base-color;
+	top: 0;
+	.wrap {
+		@include wrap;
+		padding: 10px 3%;
+		@include flex;
+		justify-content: space-between;
+		.title-area {
+			flex-basis: 50%;
+			display: flex;
+			 figure {
+				flex-basis: 10%;
+				margin: 0 20px 0 0;
+				img {
+					width: 100%;
+				}
+
+			}
+			span{
+				flex-basis: 50%;
+				align-self: center;
+			}
+			
+
+		}
+		nav {
+			display: flex;
+			flex-basis: 50%;
+			justify-content: flex-end;
+			ul {
+				display: flex;
+				padding: 0;
+				margin: 0;
+				li {
+					padding: 0 10px;
+					align-self: center;
+					&:last-child {
+						background-color: $featured-color;
+						padding: 10px 30px;
+						border-radius: 50px;
+						a,
+						a:hover {
+							color: $base-color;
+						}
+					}
+					 a {
+						color: $primary-color;
+						&::hover {
+							color: $featured-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

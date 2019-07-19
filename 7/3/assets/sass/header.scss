@@ -1,0 +1,64 @@
+// Header 
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	top: 0;
+	.wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 10px 3%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.title-area {
+			flex-basis: 50%;
+			display: flex;
+			 figure {
+				flex-basis: 10%;
+				margin: 0 20px 0 0;
+				img {
+					width: 100%;
+				}
+
+			}
+			span{
+				flex-basis: 50%;
+				align-self: center;
+			}
+			
+
+		}
+		nav {
+			display: flex;
+			flex-basis: 50%;
+			justify-content: flex-end;
+			ul {
+				display: flex;
+				padding: 0;
+				margin: 0;
+				li {
+					padding: 0 10px;
+					align-self: center;
+					&:last-child {
+						background-color: #c6538c;
+						padding: 10px 30px;
+						border-radius: 50px;
+						a,
+						a:hover {
+							color: #fff;
+						}
+					}
+					 a {
+						color: #333;
+						&::hover {
+							color: #C6538C;
+						}
+					}
+				}
+			}
+		}
+	}
+}

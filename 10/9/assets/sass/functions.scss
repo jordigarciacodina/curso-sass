@@ -1,0 +1,37 @@
+// Functions
+
+// Sintaxis de una función
+
+//@function mifuncion() {
+// 		Lógica de la función
+//	@return $value
+//}
+
+//.selector {
+//	propiedad: mifuncion();
+//}
+
+// Ejemplo 
+
+@function doble($number) {
+	$value: $number * 2;
+	@return $value;
+}
+
+.selector {
+	font-size: doble(18px);
+}
+
+// En CSS ya existen determinadas funciones:
+
+.selector {
+	background-image: url('image.png');
+	width: calc(100% - 30px);
+	transform: translate(30px, 10px);
+}
+
+// Función para definir dinámicamente la ruta de nuestras imágenes de fondo
+
+@function img($image) {
+	@return url($path + $image)
+}

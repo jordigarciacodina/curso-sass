@@ -1,0 +1,24 @@
+// Variables
+
+$base-font: 'Source Sans Pro', sans-serif;
+$headgins-font: 'Source Serif Pro', serif;
+
+$base-color: #fff;
+$primary-color: #333;
+$featured-color: #c6538c;
+$back-color: #f9f9f9;
+$secondary-color: #aaa;
+
+/*
+	Hue: Tono del color, va de 0 a 360 grados.
+	Saturation: Intensidad del color, va de 0 a 100, de gris al color puro
+	Lightness: Intensidad de la luz, va de 0 a 100, siendo el 50 el color puro
+*/
+
+/* body {
+	background-color: darken($featured-color, 10%);
+	background-color: lighten($featured-color, 20%);
+	background-color: saturate($featured-color, 5%);
+	background-color: desaturate($featured-color, 10%);
+	background-color: adjust-hue($featured-color, 20%);
+} */

@@ -1,0 +1,73 @@
+// Contact 
+
+@import "variables";
+@import "mixins";
+
+.contact {
+	@include section;
+	background-color: $back-color;
+	.wrap {
+		@include wrap;
+		max-width: 700px;
+		h2 {
+			text-align: center;
+		}
+		form .wrap {
+			@include flex;
+			justify-content: space-between;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="submit"] {
+			color: $secondary-color;
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="url"] {
+			flex-basis: calc(33% - 20px);
+			border-radius: 5px;
+		}
+		
+		input[type="submit"] {
+			background-color: $featured-color;
+			color: $base-color;
+			border-radius: 50px;
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+		
+		textarea {
+			height: 200px;
+			font-size: 16px;
+			color:  $back-color;
+			margin-bottom: 30px;
+			vertical-align: baseline;
+			border-radius: 5px;
+		}
+		
+		input,
+		seleect,
+		textarea {
+			width: 100%;
+			padding: 15px;
+			box-sizing: border-box;
+			border: 1px solid $featured-color;
+		}
+		
+		input[type="checkbox"] {
+			width: auto;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+		
+		.legal-text {
+			font-size: 14px;
+			color: $back-color;
+		}
+	}
+}

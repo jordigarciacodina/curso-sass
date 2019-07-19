@@ -1,0 +1,34 @@
+// Bucles
+
+// Bucle For
+
+@for $i from 1 through 100 {
+	.caja-#{$i} {
+		width: $i *1%;
+	}
+}
+
+// Bucle Each con listas
+
+$colors: blue, green, red;
+
+@each $color in $colors {
+	.button-#{$color} {
+		background: $color;
+	}
+}
+
+// Bucle Each con mapas
+
+$colors: (
+	base: #fff,
+	primary: #333,
+	featured: #c6538c,
+	back: #f9f9f9,
+);
+
+@each $key, $value in $colors {
+	.button-#{$key} {
+		background-color: $value;
+	}
+}

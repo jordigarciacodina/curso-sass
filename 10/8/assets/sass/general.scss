@@ -1,0 +1,56 @@
+// General
+
+@import "variables";
+@import "mixins";
+
+body {
+	font-family: $base-font;
+	color: $primary-color;
+	@include font-size(18);
+	line-height: 1.2;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headgins-font;
+	margin: 0 0 20px;
+	line-height: 1;
+	font-weight: 400;
+}
+
+h1 {
+	@include font-size(40);
+}
+
+h2 {
+	@include font-size(30);
+}
+
+h3 {
+	@include font-size(26);
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+a {
+	text-decoration: none;
+	color: $featured-color;
+	font-weight: 400;
+}
+
+span {
+	font-weight: 400;
+}
+
+ul {
+	list-style: none;
+}
+
+hr {
+	width: 100px;
+	border: 1px solid $featured-color;
+	border-radius: 5px;
+	margin: 20px auto;
+}

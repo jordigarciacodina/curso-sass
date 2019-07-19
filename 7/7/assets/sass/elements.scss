@@ -1,0 +1,43 @@
+// Elements
+
+@import "variables";
+@import "mixins";
+
+.elements {
+	@include section;
+	.wrap {
+		@include wrap;
+		h2 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			font-size: 20px;
+			max-width: 700px;
+			margin: 0 auto 30px;
+		}
+		.row {
+			@include flex;
+			justify-content: space-between;
+			&:first-of-type {
+				margin-bottom: 30px;
+			}
+			 .element {
+				flex-basis: calc(25% - 60px);
+				text-align: center;
+				color: $base-color;
+				background-color: $featured-color;
+			    border-radius: 100px 5px;
+			    &:hover {
+					color: $featured-color;
+					border: 1px solid $featured-color;
+					background-color: $base-color;
+				}
+				h3 {
+					margin: 0;
+					padding: 30px;
+				}
+			}
+		}
+	}
+}

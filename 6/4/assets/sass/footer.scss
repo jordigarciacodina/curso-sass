@@ -1,0 +1,33 @@
+// Footer 
+
+@import "variables";
+
+footer {
+	width: 100%;
+	background-color: $primary-color;
+	.wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding:15px 3%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		span {
+			color: $base-color;
+			font-weight: 300;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-flow: row nowrap;
+			li {
+				padding: 0 10px;
+				a {
+					color: $base-color;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}

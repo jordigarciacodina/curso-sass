@@ -1,0 +1,33 @@
+// Features
+
+@import "variables";
+@import "mixins";
+
+.features {
+	@include section;
+	.wrap {
+		@include wrap;
+		h2 {
+			text-align: center;
+		}
+		.row {
+			@include flex;
+			justify-content: space-around;
+			&:first-of-type {
+				margin-bottom: 30px;
+			}
+			.feature {
+				flex-basis: calc(33% - 30px);
+				text-align: center;
+				ion-icon {
+				 @include font-size(60);
+				  color: $featured-color;
+				  margin-bottom: 20px;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

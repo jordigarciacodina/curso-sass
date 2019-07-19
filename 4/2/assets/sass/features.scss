@@ -1,0 +1,40 @@
+// Features
+
+.features {
+	max-width: 100%;
+	padding: 60px 3%;
+}
+
+.features .wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.features .wrap h2 {
+	text-align: center;
+}
+
+.features .wrap .row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.features .wrap .row:first-of-type {
+	margin-bottom: 30px;
+}
+
+.features .wrap .row .feature {
+	flex-basis: calc(33% - 30px);
+	text-align: center;
+}
+
+.features .wrap .row .feature ion-icon {
+  font-size: 60px;
+  color: #c6538c;
+  margin-bottom: 20px;
+}
+
+.features .wrap .row .feature p {
+	margin-bottom: 0;
+}

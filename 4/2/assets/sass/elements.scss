@@ -1,0 +1,51 @@
+// Elements
+
+.elements {
+	max-width: 100%;
+	padding: 60px 3%;
+}
+
+.elements .wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.elements .wrap h2 {
+	text-align: center;
+}
+
+.elements .wrap p {
+	text-align: center;
+	font-size: 20px;
+	max-width: 700px;
+	margin: 0 auto 30px;
+}
+
+.elements .wrap .row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.elements .wrap .row:first-of-type {
+	margin-bottom: 30px;
+}
+
+.elements .wrap .row .element {
+	flex-basis: calc(25% - 60px);
+	text-align: center;
+	color: #fff;
+	background-color: #c6538c;
+    border-radius: 100px 5px;
+}
+
+.elements .wrap .row .element:hover {
+	color: #c6538c;
+	border: 1px solid #c6538c;
+	background-color: #fff;
+}
+
+.elements .wrap .row .element h3 {
+	margin: 0;
+	padding: 30px;
+}

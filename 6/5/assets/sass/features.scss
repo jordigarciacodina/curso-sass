@@ -1,0 +1,35 @@
+// Features
+
+@import "variables";
+
+.features {
+	max-width: 100%;
+	padding: 60px 3%;
+	.wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		h2 {
+			text-align: center;
+		}
+		.row {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			&:first-of-type {
+				margin-bottom: 30px;
+			}
+			.feature {
+				flex-basis: calc(33% - 30px);
+				text-align: center;
+				ion-icon {
+				  font-size: 60px;
+				  color: $featured-color;
+				  margin-bottom: 20px;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

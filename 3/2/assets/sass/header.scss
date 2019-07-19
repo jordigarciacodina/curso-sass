@@ -1,0 +1,74 @@
+// Header 
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	top: 0;
+}
+
+header .wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 3%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+header .wrap .title-area {
+	flex-basis: 50%;
+	display: flex;
+}
+
+header .wrap .title-area figure {
+	flex-basis: 10%;
+	margin: 0 20px 0 0;
+}
+
+header .wrap .title-area figure img {
+	width: 100%;
+}
+
+header .wrap .title-area span{
+	flex-basis: 50%;
+	align-self: center;
+}
+
+header .wrap nav {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: flex-end;
+}
+
+header .wrap nav ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+header .wrap nav ul li {
+	padding: 0 10px;
+	align-self: center;
+}
+
+header .wrap nav ul li:last-child {
+	background-color: #c6538c;
+	padding: 10px 30px;
+	border-radius: 50px;
+}
+
+header .wrap nav ul li:last-child a,
+header .wrap nav ul li:last-child a:hover {
+	color: #fff;
+}
+
+header .wrap nav ul li a {
+	color: #333;
+}
+
+header .wrap nav ul li a:hover {
+	color: #C6538C;
+
+}
